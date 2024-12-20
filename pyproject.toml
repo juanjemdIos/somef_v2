@@ -3,7 +3,9 @@ name = "somef_v2"
 version = "0.1.0"
 description = "Testing realease actions with poetry. Test Pypi"
 authors = ["Jenifer Tabita Ciuciu-Kiss <jenifer.tabita.ciuciu.kiss@gmail.com>"]
-
+packages = [
+    { include = "somef", from = "src" }
+]
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
 bs4 = "^0.0.1"
@@ -35,6 +37,9 @@ scikit-learn = "^1.3.2"
 
 [tool.poetry.scripts]
 somef = "somef.__main__:cli"
+
+[tool.poetry.urls]
+homepage = "https://github.com/juanjemdIos/somef_v2"
 
 [build-system]
 requires = ["poetry-core>=1.1.10"]
