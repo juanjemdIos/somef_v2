@@ -27,4 +27,4 @@ jobs:
       - name: Publish to TestPypi
         env:
           POETRY_PYPI_TOKEN_PYPI: ${{ secrets.TEST_PYPI_TOKEN }}
-        run: poetry publish --repository testpypi
+        run: poetry publish --repository test_cargar_api
