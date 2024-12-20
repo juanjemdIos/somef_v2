@@ -36,12 +36,6 @@ scikit-learn = "^1.3.2"
 [tool.poetry.scripts]
 somef = "somef.__main__:cli"
 
-[tool.poetry.repositories]
-test_cargar_api = { url = "https://test.pypi.org/legacy/" }
-
-[tool.poetry.publish]
-test_cargar_api = { username = "__token__", password = "{TEST_PYPI_TOKEN}" }
-
 [build-system]
 requires = ["poetry-core>=1.1.10"]
 build-backend = "poetry.core.masonry.api"

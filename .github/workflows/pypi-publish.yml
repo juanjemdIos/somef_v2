@@ -22,9 +22,11 @@ jobs:
         run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Install dependencies
         run: poetry install
-      - name: Build package
-        run: poetry build
-      - name: Publish to TestPypi
-        env:
-          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.TEST_PYPI_TOKEN }}
-        run: poetry publish --repository test_cargar_api
+      - name: Configure Poetry for TestPyPI
+        run: |
+          poetry config repositories.test_cargar_api https://test.pypi.org/legacy/
+          poetry config pypi-token.test_cargar_api ${{ secrets.TEST_PYPI_TOKEN }}
+      - name: Build and publish
+        run: |
+          poetry build
+          poetry publish --repository test_cargar_api
