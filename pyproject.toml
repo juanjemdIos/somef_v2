@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "somef_v2"
-version = "0.1.0"
+version = "0.1.1"
 description = "Testing realease actions with poetry. Test Pypi"
 authors = ["Jenifer Tabita Ciuciu-Kiss <jenifer.tabita.ciuciu.kiss@gmail.com>"]
 packages = [
