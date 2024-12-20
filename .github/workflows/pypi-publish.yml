@@ -24,8 +24,8 @@ jobs:
         run: poetry install
       - name: Configure Poetry for TestPyPI
         run: |
-          poetry config repositories.test_cargar_api https://test.pypi.org/legacy/
-          poetry config pypi-token.test_cargar_api ${{ secrets.TEST_PYPI_TOKEN }}
+          poetry config repositories.test_somef_v2 https://test.pypi.org/legacy/
+          poetry config pypi-token.test_somef_v2 ${{ secrets.TEST_PYPI_TOKEN }}
 
       - name: Build and publish
         env:
@@ -33,4 +33,4 @@ jobs:
           POETRY_HTTP_BASIC_TEST_CARGAR_API_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
           poetry build
-          poetry publish --repository test_cargar_api
+          poetry publish --repository test_somef_v2
