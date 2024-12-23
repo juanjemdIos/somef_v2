@@ -14,7 +14,6 @@ classifiers = [
     "Framework :: Documentation :: Sphinx"
     ]
 readme = "README.md"
-readme_content-type = "text/markdown"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
