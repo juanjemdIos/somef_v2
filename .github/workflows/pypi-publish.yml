@@ -20,10 +20,10 @@ jobs:
           python-version: "3.x"
       - name: Install Poetry
         run: curl -sSL https://install.python-poetry.org | python3 -
-      - name: Install dependencies
-        run: poetry install
       - name: Update version
         run: python update_version.py
+      - name: Install dependencies
+        run: poetry install
       - name: Configure Poetry for TestPyPI
         run: |
           poetry config repositories.test_somef_v2 https://test.pypi.org/legacy/
