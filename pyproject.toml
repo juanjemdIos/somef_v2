@@ -2,7 +2,7 @@
 name = "somef_v2"
 version = "{version-file}"
 description = "SOftware Metadata Extraction Framework: A tool for automatically extracting relevant software information from readme files."
-authors = ["Daniel Garijo<daniel.garijo@upm.es>"]
+authors = ["Daniel Garijo <daniel.garijo@upm.es>"]
 packages = [
     { include = "somef", from = "src" }
 ]
