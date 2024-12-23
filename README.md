@@ -5,7 +5,6 @@
 
 <img src="docs/logo.png" alt="logo" width="150"/>
 
-k
 A command line interface for automatically extracting relevant metadata from code repositories (readme, configuration files, documentation, etc.).
 
 **Demo:** See a [demo running somef as a service](https://somef.linkeddata.es), through the [SOMEF-Vider tool](https://github.com/SoftwareUnderstanding/SOMEF-Vider/).
